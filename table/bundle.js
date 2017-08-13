@@ -10992,6 +10992,8 @@ var ProductTable = function (_React$Component4) {
         rows.push(_react2.default.createElement(ProductRow, { product: product, key: product.name }));
         lastCategory = product.category;
       });
+
+      console.log(rows);
       return _react2.default.createElement(
         'table',
         null,

@@ -38,6 +38,7 @@ class ProductRow extends React.Component {
 }
 
 class ProductTable extends React.Component {
+
   render() {
     var rows = [];
     var lastCategory = null;
@@ -52,6 +53,8 @@ class ProductTable extends React.Component {
       rows.push(<ProductRow product={product} key={product.name} />);
       lastCategory = product.category;
     });
+    
+    console.log(rows);
     return (
       <table>
         <thead>
