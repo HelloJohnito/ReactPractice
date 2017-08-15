@@ -1,0 +1,29 @@
+React is a javascript library for creating UL components
+React is the V in MVC
+React takes in JSON data and renders it to the user, making it a single page application
+
+Think of everything in Components
+  - components are classes that inherit from React.Component
+  - components are reusable
+
+Props - attributes that are passed down from the parent component
+State - attributes that the user can interact with
+  - Update in both will cause a re-render
+
+Render - Uses JSX, looks like HTML.
+       - Can Append listeners directly into the HTML tags. Ex. onClick, onChange
+       - All components must have a render function
+
+Life Cycle - a function that runs during a certain time of the life cycle of the component
+ - ComponentWillMount
+ - ComponentDidMount
+ - ComponentWillRecieveProps
+ - ComponentWillUpdate
+ - ComponentDidUpdate
+ - ComponentUnmount
+
+Virtual DOM
+ - Every time there is an update, React will create a Virtual DOM and compare the changes between the new and the old virtual DOM and make the necessary changes to the DOM
+ - Reconciliation Phase: when the virtual DOMs are comparing
+ - Diffing Algorithm: uses BFS and when a node has an update, it will re render all its subtrees.
+    - Improves the time complexity from o(n^3) to o(n)
